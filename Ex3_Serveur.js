@@ -10,6 +10,7 @@ http.createServer(function(request, response)
 	for (var p in obj) {
 		html += "<tr><td>" + p + "</td><td>" + obj[p] + "</td></tr>";
 	}
+	html += "</table>"
 	response.write(html);
 	response.end();
 }).listen(3000);
